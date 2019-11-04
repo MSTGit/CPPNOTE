@@ -47,7 +47,7 @@ double func(int v1, double v2) {
 
 上面的两个函数，不构成函数的重载，在编译器中，会直接标错[下图]，代码不能通过。
 
-![1572750509913](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572750509913.png)
+![1572750509913](https://github.com/MSTGit/CPPNOTE/blob/master/Overload/Resource/1572750509913.png)
 
 我们想想为什么这种情况下不能构成重载？
 
@@ -95,7 +95,7 @@ int main() {
 
 但是，当我们去掉函数`void display(int a)`以后，会发现我们程序就报错了。
 
-![1572751436197](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572751436197.png)
+![1572751436197](https://github.com/MSTGit/CPPNOTE/blob/master/Overload/Resource/1572751436197.png)
 
 因为此时编译器发现，`display(10)`调用函数`void display(long a)`合理，调用函数`void display(double a)`也是合理的。因为这个时候调用`display(10)`时，传入的参数存在隐式转换。因为我们平时就可以将一个int类型赋值给一个long类型，也可以将一个int类型赋值给一个double类型，例如这样去写代码
 
@@ -156,11 +156,11 @@ void display() {
 }
 ```
 
-![1572753062883](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572753062883.png)
+![1572753062883](https://github.com/MSTGit/CPPNOTE/blob/master/Overload/Resource/1572753062883.png)
 
 运行起来以后，在编译器代码区右击鼠标，选择转到反汇编，我们就可以来到当前代码转为的汇编代码
 
-![1572753479949](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572753479949.png)
+![1572753479949](https://github.com/MSTGit/CPPNOTE/blob/master/Overload/Resource/1572753479949.png)
 
 首先我们知道，每一条汇编指令都有自己对应的内存地址，并且是按顺序往下执行的，并且连续的汇编指令，对应的地址也是连续的。
 
@@ -170,17 +170,17 @@ void display() {
 
 最终反编译后，我们看到main函数是这样的
 
-![1572755029840](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572755029840.png)
+![1572755029840](https://github.com/MSTGit/CPPNOTE/blob/master/Overload/Resource/1572755029840.png)
 
 并且我们看到左边有4个不同的display函数名，我们可以看一下这4个函数的具体实现，最终我们发现
 
-![1572755196408](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572755196408.png)
+![1572755196408](https://github.com/MSTGit/CPPNOTE/blob/master/Overload/Resource/1572755196408.png)
 
-![1572755225438](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572755225438.png)
+![1572755225438](https://github.com/MSTGit/CPPNOTE/blob/master/Overload/Resource/1572755225438.png)
 
-![1572755252469](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572755252469.png)
+![1572755252469](https://github.com/MSTGit/CPPNOTE/blob/master/Overload/Resource/1572755252469.png)
 
-![1572755289810](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572755289810.png)
+![1572755289810](https://github.com/MSTGit/CPPNOTE/blob/master/Overload/Resource/1572755289810.png)
 
 所以我们看到，最终的函数名是不一样的
 

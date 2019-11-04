@@ -174,7 +174,7 @@ int main() {
 
 在我们没有使用默认参数时，我们来看看该代码对应生成的汇编代码
 
-![1572869797606](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572869797606.png)
+![1572869797606](https://github.com/MSTGit/CPPNOTE/blob/master/DefaultParam/Resource/1572869797606.png)
 
 我们看到，调用一次sum函数，会生成4句对应的汇编代码，其中我们看到call指令，直接调用的是sum函数，并且我们也可以发现，两次call指令，调用的函数，对应的地址是一样的。但是对应的参数是不一样的，所以在调用sum函数之前，会通过push指令，将参数入栈传参，然后再调用sum函数。
 
@@ -193,7 +193,7 @@ int main() {
 
 运行成功后，转到反汇编的结果为
 
-![1572870512661](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572870512661.png)
+![1572870512661](https://github.com/MSTGit/CPPNOTE/blob/master/DefaultParam/Resource/1572870512661.png)
 
 通过结果，我们发现，如果我们调用有默认参数的函数是，如果我们不传默认参数的话，在程序运行时，也会将默认参数通过push指令，将参数传入函数中，最终传的参数也是2个。那么如果我们换一种方式调用呢？如
 
@@ -211,6 +211,6 @@ int main() {
 
 运行成功后，转到反汇编的结果为
 
-![1572870832415](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1572870832415.png)
+![1572870832415](https://github.com/MSTGit/CPPNOTE/blob/master/DefaultParam/Resource/1572870832415.png)
 
 通过认真观察，我们发现，两句函数调用，最终生成的汇编代码是相同的，所以上面的两种函数调用是等价的。
