@@ -6,3 +6,7 @@
 
 [03-extern “C”（笔记&源码）](https://github.com/MSTGit/CPPNOTE/tree/master/extern_C)
 
+[04-内联函数（笔记&源码）](https://github.com/MSTGit/CPPNOTE/tree/master/InlineFunction)
+
+[05-const（笔记&源码）](https://github.com/MSTGit/CPPNOTE/tree/master/const)
+
