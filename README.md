@@ -14,3 +14,5 @@
 
 [07-类与对象(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/ClassAndObject)
 
+[08-this的本质(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/this)
+
