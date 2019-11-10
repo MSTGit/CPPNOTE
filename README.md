@@ -16,3 +16,9 @@
 
 [08-this的本质(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/this)
 
+[09-封装(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/Encapsulation)
+
+[10-内存空间的布局(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/Memory)
+
+[11-构造函数（Constructor）(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/Constructor)
+
