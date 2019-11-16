@@ -22,3 +22,5 @@
 
 [11-构造函数（Constructor）(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/Constructor)
 
+[12-析构函数（Destructor）(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/Destructor)
+
