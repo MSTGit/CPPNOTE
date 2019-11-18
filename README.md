@@ -24,3 +24,5 @@
 
 [12-析构函数（Destructor）(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/Destructor)
 
+[13-继承(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/Inherit)
+
