@@ -26,3 +26,5 @@
 
 [13-继承(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/Inherit)
 
+[14-初始化列表(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/InitializationList)
+
