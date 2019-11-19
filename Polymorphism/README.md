@@ -32,7 +32,7 @@ Student* p = new Person;
 Person* p = new Student;
 ```
 
-![1573995180911](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1573995180911.png)
+![1573995180911](https://github.com/MSTGit/CPPNOTE/blob/master/Polymorphism/Resource/1573995180911.png)
 
 但是虽然现在创建的对象是一个Student对象，但是是用Person指针指向该对象的，所以*p指针可以访问的成员变量就只有m_age，所以这样做是安全的。但是如果反过来，那代码就可以这样写
 
@@ -44,7 +44,7 @@ p->m_score = 100;
 
 对应指针与对象的关系如下图
 
-![1573995878961](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1573995878961.png)
+![1573995878961](https://github.com/MSTGit/CPPNOTE/blob/master/Polymorphism/Resource/1573995878961.png)
 
 可以看到*p指向的是Person对象，但是写代码是，却可以访问m_age和m_height，由于当前的情况下，创建一个Person对象只占用4个字节，但是这个时候，编译器认为 *p指向的是一个Student对象，所以在使用 *p访问成员变量时，可以访问Student对象内存大小的区域，即8个字节的内存空间，很明显已经超出了Person对象的内存区域。所以这种方式是不安全的。
 
@@ -187,7 +187,7 @@ p->speak();
 
 代码转为的汇编代码
 
-![1573999513913](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1573999513913.png)
+![1573999513913](https://github.com/MSTGit/CPPNOTE/blob/master/Polymorphism/Resource/1573999513913.png)
 
 在汇编代码里面可以看到，call函数调用的是一个固定的函数地址，说明不管当前*p指针指向的什么对象，最终都会调用该函数。所以说明具体应该调用哪个函数，在代码编译阶段就已经确定了，不会根据对象去找对应对象方法的实现。
 
@@ -213,7 +213,7 @@ struct Animal {
 
 将程序运行起来以后，可以看到，调用了对象真正函数的实现。然后对应的汇编代码可以发现，发生了改变
 
-![1574000427730](C:\Users\T\AppData\Roaming\Typora\typora-user-images\1574000427730.png)
+![1574000427730](https://github.com/MSTGit/CPPNOTE/blob/master/Polymorphism/Resource/1574000427730.png)
 
 现在call调用的是寄存器中存储的内容，所以寄存器里面可以存不同的地址，最终调用的是根据寄存器内容，来决定调用哪个函数，是动态的
 
