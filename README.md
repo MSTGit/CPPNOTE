@@ -30,3 +30,5 @@
 
 [15-多态(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/Polymorphism)
 
+[16-虚表(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/VirtualTable)
+
