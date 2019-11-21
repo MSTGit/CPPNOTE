@@ -32,3 +32,5 @@
 
 [16-虚表(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/VirtualTable)
 
+[17-多继承(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/MultipleInheritance)
+
