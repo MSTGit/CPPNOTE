@@ -34,3 +34,5 @@
 
 [17-多继承(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/MultipleInheritance)
 
+[18-static成员(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/staticMember)
+
