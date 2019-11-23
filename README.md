@@ -36,3 +36,5 @@
 
 [18-static成员(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/staticMember)
 
+[19-static成员(笔记&源码)](https://github.com/MSTGit/CPPNOTE/tree/master/constMember)
+
