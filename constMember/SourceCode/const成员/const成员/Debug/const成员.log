@@ -1,0 +1,4 @@
+﻿  main.cpp
+C:\Users\T\Desktop\C++\Code\const成员\const成员\main.cpp(1,1): warning C4819: 该文件包含不能在当前代码页(936)中表示的字符。请将该文件保存为 Unicode 格式以防止数据丢失
+C:\Users\T\Desktop\C++\Code\const成员\const成员\main.cpp(28,16): warning C4269: “car2”: 用编译器生成的默认构造函数初始化的“const”自动数据产生不可靠的结果
+  const成员.vcxproj -> C:\Users\T\Desktop\C++\Code\const成员\Debug\const成员.exe
